@@ -6,9 +6,9 @@ import TodoItem from './TodoItem'
 function App() {
   return (
     <div className="todo">
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <TodoItem label="Do the dishes" />
+      <TodoItem label="Cook dinner" />
+      <TodoItem label="Sweep the floor" />
     </div>
   )
 }
