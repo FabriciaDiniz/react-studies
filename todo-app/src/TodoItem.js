@@ -8,8 +8,8 @@ function TodoItem(props) {
 
   return (
     <div className="todo-item">
-      <input type="checkbox" checked={props.chore.completed}/>
-      <label onClick={() => showAlert(props.chore)}>{props.chore.name}</label>
+      <input type="checkbox" checked={props.chore.completed} onChange={() => props.handleChange(props.chore.id)}/>
+      <label>{props.chore.name}</label>
     </div>
   )
 }
